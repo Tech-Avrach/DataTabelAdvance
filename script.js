@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var data = [];
     var emailVerify = [];
-    var pwdCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+    var pwdCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/    //password validation
 
     $("#myTable").DataTable({
         data: data,
@@ -34,7 +34,7 @@ $(document).ready(function () {
         }
         else{
             $("#passCap").css("color", "green");
-            $("#passCap").css("text-shadow", " 0 0 10px rgb(124, 255, 101)");
+            $("#passCap").css("text-shadow", " 0 0 10px rgb(198, 255, 145)");
             
         }
         
@@ -183,7 +183,7 @@ $(document).ready(function () {
     function colorInfo()
     {
         $("#passCap").css("color", "red");
-        $("#passCap").css("text-shadow", "0 0 10px rgba(255, 4, 4, 0.8)");
+        $("#passCap").css("text-shadow", " 0 0 15px rgb(255, 95, 95)");
     }
 
     function addData()
